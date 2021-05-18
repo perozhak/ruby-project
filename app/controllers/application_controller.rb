@@ -13,6 +13,16 @@ class ApplicationController < ActionController::Base
             session[:user_id] = @current_user.id
             @current_user
         end
+
+        if @current_user.nil?
+            @current_user = User.generate
+            session[:user_id] = @current_user.id
+            @current_user
+        end
+
+        cookies[:user_id] = @current_user.id
+
+        @current_user
     end
 
 end

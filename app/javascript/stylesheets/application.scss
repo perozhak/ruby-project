@@ -138,3 +138,14 @@ body {
     max-height: 70vh;
     overflow-y: scroll;
 }
+
+.activity-status {
+    font-size: 20px;
+    float: left;
+    margin-top: -6px;
+    margin-right: 4px;
+    color:#e0e0e0;
+    &.online {
+        color: #64dd17
+    }
+}
