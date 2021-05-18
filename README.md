@@ -1,4 +1,4 @@
-# This is ruby messanger build on ActiobCabla
+# This is ruby messanger build on ActionCable
 
 Browser give you random name and you can chat with some one:
 It remember you
