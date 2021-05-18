@@ -1,4 +1,5 @@
 class RoomsController < ApplicationController
+  http_basic_authenticate_with name: "admin", password: "1q2", except: [:index, :show]
   before_action :set_room, only: %i[ show edit update destroy ]
 
   # GET /rooms or /rooms.json
