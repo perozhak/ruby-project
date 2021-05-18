@@ -3,7 +3,8 @@ import consumer from "./consumer"
 document.addEventListener('turbolinks:load', () => {
   const room_element = document.getElementById('room-id');
   const room_id = Number(room_element.getAttribute('data-room-id'));
-
+  var chatRoom = document.getElementsByClassName('chat-room')[0];
+  chatRoom.scrollTop = chatRoom.scrollHeight;
 
   consumer.subscriptions.subscriptions.forEach((subscription) => {
     consumer.subscriptions.remove(subscription);
@@ -35,6 +36,8 @@ document.addEventListener('turbolinks:load', () => {
   
       const messageContainer = document.getElementById('messages')
       messageContainer.innerHTML = messageContainer.innerHTML + html
+
+      chatRoom.scrollTop = chatRoom.scrollHeight;
     }
   });
   
