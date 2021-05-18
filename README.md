@@ -1,24 +1,15 @@
-# README
+# This is ruby messanger build on ActiobCabla
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Browser give you random name and you can chat with some one:
+It remember you
 
-Things you may want to cover:
+You can:
+* Message in every room 
 
-* Ruby version
+* See who is online
 
-* System dependencies
+* Credentials to create new room - u: admin | p: 1q2
 
-* Configuration
+* Added composer files
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* Database changed from Sqlite to PG, tried to deploy on heroku  but can't :(( Anyway url: https://perozhak-ruby-messanger.herokuapp.com/
