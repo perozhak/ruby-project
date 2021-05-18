@@ -27,6 +27,7 @@ class MessagesController < ApplicationController
 
     SendMessageJob.perform_later(@message)
 
+    redirect_to @message.room
     # html = render(partial: 'messages/message',
     #   locals: {message: @message}
     # )
